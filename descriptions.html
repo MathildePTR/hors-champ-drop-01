@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HORS CHAMP — Tailles et détails techniques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&family=Archivo:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --chalk: #E8E7E2; --carbon: #151515; --concrete: #898985; --steel: #B8BBB7; --signal: #D6FF3F; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--chalk); color: var(--carbon); font-family: "Archivo", system-ui, sans-serif; font-size: 16px; line-height: 1.55; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+    .label { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+    header { border-bottom: 1px solid var(--steel); padding: 16px 0; }
+    .brand { font-family: "Archivo Narrow", sans-serif; font-weight: 700; font-size: 22px; letter-spacing: .04em; text-decoration: none; color: var(--carbon); }
+    main { padding: 56px 0 80px; }
+    h1 { font-family: "Archivo Narrow", sans-serif; font-weight: 700; text-transform: uppercase; font-size: clamp(40px, 7vw, 72px); line-height: .95; margin: 12px 0 32px; }
+    h2 { font-family: "Archivo Narrow", sans-serif; font-weight: 700; text-transform: uppercase; font-size: 32px; margin: 48px 0 16px; }
+    table { width: 100%; border-collapse: collapse; font-family: "JetBrains Mono", monospace; font-size: 14px; }
+    th, td { border-bottom: 1px solid var(--steel); padding: 12px 8px; text-align: left; }
+    th { border-bottom: 1px solid var(--carbon); }
+    ul { list-style: none; display: grid; gap: 10px; }
+    li::before { content: "→ "; font-family: "JetBrains Mono", monospace; }
+    .back { display: inline-flex; margin-top: 48px; min-height: 48px; align-items: center; padding: 0 20px; border: 1px solid var(--carbon); color: var(--carbon); text-decoration: none; }
+    .back:hover, .back:focus-visible { background: var(--carbon); color: var(--chalk); }
+    .note { color: var(--concrete); margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap"><a class="brand" href="index.html">HORS CHAMP</a></div>
+  </header>
+  <main>
+    <div class="wrap">
+      <p class="label">Drop 01 — Outside System</p>
+      <h1>Tailles et détails techniques</h1>
+
+      <h2>Système de tailles</h2>
+      <table>
+        <thead><tr><th>Taille</th><th>Largeur</th><th>Longueur</th></tr></thead>
+        <tbody>
+          <tr><td>S</td><td>58 cm</td><td>68 cm</td></tr>
+          <tr><td>M</td><td>62 cm</td><td>71 cm</td></tr>
+          <tr><td>L</td><td>66 cm</td><td>74 cm</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Mesures à plat, en cm. Exercice pédagogique : valeurs fictives.</p>
+
+      <h2>Matières et finitions</h2>
+      <ul>
+        <li>Matières : coton lourd 450 g/m², nylon ripstop, coton recyclé</li>
+        <li>Finitions : lavage pierre et patine appliquée à la main</li>
+        <li>Détail réfléchissant (Signal Cap) : bande 3M sur la visière</li>
+      </ul>
+
+      <a class="back" href="index.html">← Retour à la landing page</a>
+    </div>
+  </main>
+</body>
+</html>
